@@ -108,7 +108,7 @@ class EmailVerification extends AbstractEndpoint
         }
 
         $url = $this->buildUri("$this->endpoint/$emailVerificationId/results")."?".http_build_query([
-                'page' => $page,
+                '1' => $page,
                 'limit' => $limit,
                 'results' => $results,
             ]);
